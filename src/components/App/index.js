@@ -1,5 +1,5 @@
 import { useQuery } from "@apollo/client";
-import { QUERY } from './utils/query'
+import { QUERY } from '../../utils/query'
 
 function App() {
   const { loading, error, data } = useQuery(QUERY);

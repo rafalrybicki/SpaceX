@@ -5,7 +5,7 @@ import {
   InMemoryCache,
   ApolloProvider,
 } from "@apollo/client";
-import App from './App';
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
 const client = new ApolloClient({
