@@ -12,7 +12,7 @@ export const QUERY = gql`
         site_name_long
         site_name
       }
-      launch_date_unix
+      launch_date_local
       rocket {
         rocket_name
         fairings {

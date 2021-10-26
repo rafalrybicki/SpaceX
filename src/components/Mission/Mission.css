@@ -1,0 +1,63 @@
+.mission .feature-name, .mission .feature-val {
+  display: block;
+}
+
+.mission .mission-name {
+  font-size: 34px;
+}
+
+.mission .feature-name {
+  font-size: 14px;
+  margin: 20px 0 7px;
+}
+
+.mission .feature-val, .mission .rocket-val {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mission .rocket-status {
+  display: inline-block;
+  padding: 4px 4px 0 5px;
+  margin-left: 4px;
+  color: #000;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  background: #BE4E35;;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.mission .rocket-status.recovered {
+  background: #6FB46E;
+}
+
+.mission .link {
+  margin: 33px 0 27px;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  color: inherit;
+  border: 2px solid #FFF;
+  height: 54px;
+  width: 100%;
+  text-align: center;
+  padding-top: 17px;
+  font-weight: 500;
+  transition: .1s all;
+}
+
+.mission .link:hover {
+  border-color: royalblue;
+  color: royalblue;
+}
+
+.mission .tooltip {
+  display: none;
+}
+
+@media (min-width: 767.98px) {
+  .mission .tooltip {
+    display: block;
+  }
+}

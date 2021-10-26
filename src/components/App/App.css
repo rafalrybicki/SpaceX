@@ -1,0 +1,13 @@
+.app {
+  background: linear-gradient(297.9deg, #323237 15.11%, #000000 90.89%);
+  height: 100%;
+  width: 100%;
+  color: white;
+  padding: 0 15px;
+}
+
+.feature-name {
+  color: #868686;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}

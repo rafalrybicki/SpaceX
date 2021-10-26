@@ -1,5 +1,7 @@
+import './App.css'
 import { useQuery } from "@apollo/client";
 import { QUERY } from '../../utils/query'
+import Mission from "../Mission";
 
 function App() {
   const { loading, error, data } = useQuery(QUERY);
@@ -9,8 +11,9 @@ function App() {
   console.log(data)
   
   return (
-    <div className="App">
+    <div className="app">
       <h1>SpaceX</h1>
+      <Mission {...data.launchesPast[0]}/>
     </div>
   );
 }
