@@ -1,7 +1,8 @@
-import './Mission.css'
+import './style.css'
 import { getFormatDate } from '../../utils/getFormtDate'
+import ShipList from '../ShipList'
 
-export default function Mission({ mission_name, rocket, links, launch_date_local, launch_site }) {
+export default function Mission({ mission_name, rocket, links, launch_date_local, launch_site, ships }) {
   const recovered = rocket.fairings.recovered
 
   return (
@@ -30,6 +31,8 @@ export default function Mission({ mission_name, rocket, links, launch_date_local
         {launch_site.site_name}
         <span className="tooltip"> {launch_site.site_name_long}</span>
       </span>
+
+      <ShipList ships={ships}/>
     </div>
   )
 }

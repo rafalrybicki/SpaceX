@@ -1,4 +1,4 @@
-import './App.css'
+import './style.css'
 import { useQuery } from "@apollo/client";
 import { QUERY } from '../../utils/query'
 import Mission from "../Mission";
