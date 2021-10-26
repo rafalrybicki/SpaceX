@@ -32,7 +32,7 @@ export default function Mission({ mission_name, rocket, links, launch_date_local
         <span className="tooltip"> {launch_site.site_name_long}</span>
       </span>
 
-      <ShipList ships={ships}/>
+      {ships && <ShipList ships={ships} />}
     </div>
   )
 }

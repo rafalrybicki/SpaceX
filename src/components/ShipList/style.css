@@ -1,3 +1,21 @@
 .ship-list {
+  position: relative;
   border-top: 1px solid #5C5C5D;
+  margin-top: 20px;
+  padding: 40px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ship-list > .feature-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 760px) {
+  .ship-list {
+    justify-content: space-between;
+  }
 }

@@ -1,0 +1,44 @@
+.ship {
+  width: 345px;
+  flex-grow: 0;
+  height: 340px;
+  border-radius: 20px;
+  background-color: #FFF;
+  color: #000;
+  overflow: hidden;
+  margin-top: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 10px 10px
+}
+
+.ship .ship-name {
+  font-size: 24px;
+  border-bottom: 1px solid #E8E8E8;
+  padding-bottom: 15px;
+  margin: 13px 0 13px 15px;
+  display: block;
+  width: calc(100% - 30px);
+}
+
+.ship .feature-name {
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 5px 0 15px;
+  min-width: 115px;
+}
+
+.ship .feature-value {
+  font-size: 14px;
+}
+
+.ship img {
+  height: 200px;
+  width: 100%;
+}
+
+@media (min-width: 760px) {
+  .ship {
+    margin: 20px 10px
+  }
+}
