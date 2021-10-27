@@ -38,6 +38,7 @@
 
 @media (min-width: 760px) {
   .ship {
-    margin: 20px 10px
+    margin-right: 10px;
+    width: 360px;
   }
 }

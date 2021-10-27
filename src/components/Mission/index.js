@@ -23,14 +23,16 @@ export default function Mission({ mission_name, rocket, links, launch_date_local
         className="link"
       >LEARN MORE</a>
 
-      <span className="feature-name">LAUNCH DATE</span>
-      <span className="feature-val">{getFormatDate(launch_date_local)}</span>
+      <div className="position-right">
+        <span className="feature-name">LAUNCH DATE</span>
+        <span className="feature-val">{getFormatDate(launch_date_local)}</span>
 
-      <span className="feature-name">LAUNCH SITE</span>
-      <span className="feature-val">
-        {launch_site.site_name}
-        <span className="tooltip"> {launch_site.site_name_long}</span>
-      </span>
+        <span className="feature-name">LAUNCH SITE</span>
+        <span className="feature-val">
+          {launch_site.site_name}
+          <span className="tooltip"> {launch_site.site_name_long}</span>
+        </span>
+      </div>
 
       {ships.length > 0&& <ShipList ships={ships} />}
     </div>

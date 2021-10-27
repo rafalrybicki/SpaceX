@@ -1,6 +1,17 @@
 .mission {
-  border-top: 1px solid #5C5C5D;
   padding: 0 15px 25px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.mission::before {
+  position: absolute;
+  left: 0;
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #5C5C5D;
 }
 
 .mission .feature-name, .mission .feature-val {
@@ -58,11 +69,56 @@
 }
 
 .mission .tooltip {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 115px;
+  right: 0;
+  background: #fff;
+  color: #000;
+  height: 19px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 2px 8px;
+  z-index: 10;
+  transition: all .1s;
 }
 
 @media (min-width: 767.98px) {
-  .mission .tooltip {
-    display: block;
+  
+}
+
+@media (min-width: 1200px) {
+  .mission::before {
+    width: calc(100% - 30px);
+    left: 15px;
+  }
+
+  .mission .feature-name {
+    font-size: 16px;
+  }
+  
+  .mission .feature-val, .mission .rocket-val {
+    font-size: 18px;
+  }
+
+  .mission .mission-name {
+    font-size: 42px;
+  }
+
+  .mission .link {
+    width: 160px;
+  }
+
+  .mission .position-right {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    text-align: right;
+    width: 500px;
+  }
+
+  .mission .feature-val:hover .tooltip{
+    opacity: 1
   }
 }

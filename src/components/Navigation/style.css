@@ -11,8 +11,11 @@
   color: #fff;
   font-size: 40px;
   font-weight: 700;
+  cursor: pointer;
+  user-select: none;
 }
 
 .navigation button:disabled {
-  color: #5C5C5D
+  color: #5C5C5D;
+  cursor: not-allowed
 }

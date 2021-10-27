@@ -16,6 +16,12 @@
 
 @media (min-width: 760px) {
   .ship-list {
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1388px) {
+  .ship-list {
+    justify-content: left;
   }
 }

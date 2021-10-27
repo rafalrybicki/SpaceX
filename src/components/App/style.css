@@ -14,9 +14,28 @@
 
 svg {
   position: absolute;
-  width: 247.25px;
+  width: auto;
   height: 24.15px;
   left: 50%;
   transform: translateX(calc(-50% + 10px));
   top: 27px
+}
+
+@media (min-width: 1000px) {
+  .app {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  svg {
+    height: 35px;
+    top: 23px;
+    transform: translateX(calc(-50% + 15px));
+  }
+}
+
+@media (min-width: 1400px) {
+  .app {
+    width: 60%;
+  }
 }
