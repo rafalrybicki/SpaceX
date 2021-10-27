@@ -1,13 +1,22 @@
-.app {
-  background: linear-gradient(297.9deg, #323237 15.11%, #000000 90.89%);
+#root {
   height: 100%;
   width: 100%;
   color: white;
-  padding: 0 15px;
+  background: linear-gradient(297.9deg, #323237 15.11%, #000000 90.89%);
+  min-height: 100vh;
 }
 
 .feature-name {
   color: #868686;
   letter-spacing: 0.1em;
   font-weight: 500;
+}
+
+svg {
+  position: absolute;
+  width: 247.25px;
+  height: 24.15px;
+  left: 50%;
+  transform: translateX(calc(-50% + 10px));
+  top: 27px
 }

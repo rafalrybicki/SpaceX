@@ -1,0 +1,18 @@
+.navigation {
+  height: 85px;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.navigation button:disabled {
+  color: #5C5C5D
+}

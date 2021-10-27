@@ -1,3 +1,8 @@
+.mission {
+  border-top: 1px solid #5C5C5D;
+  padding: 0 15px 25px;
+}
+
 .mission .feature-name, .mission .feature-val {
   display: block;
 }

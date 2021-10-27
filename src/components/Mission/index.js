@@ -3,7 +3,7 @@ import { getFormatDate } from '../../utils/getFormtDate'
 import ShipList from '../ShipList'
 
 export default function Mission({ mission_name, rocket, links, launch_date_local, launch_site, ships }) {
-  const recovered = rocket.fairings.recovered
+  const recovered = rocket.fairings && rocket.fairings.recovered
 
   return (
     <div className="mission">
@@ -32,7 +32,7 @@ export default function Mission({ mission_name, rocket, links, launch_date_local
         <span className="tooltip"> {launch_site.site_name_long}</span>
       </span>
 
-      {ships && <ShipList ships={ships} />}
+      {ships.length > 0&& <ShipList ships={ships} />}
     </div>
   )
 }

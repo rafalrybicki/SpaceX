@@ -6,7 +6,7 @@ export default function ShipList({ ships }) {
     <div className="ship-list">
       <span className="feature-name">RESCUE SHIPS</span>
       {ships.map(ship =>
-        <Ship {...ship} />
+        <Ship {...ship} key={ship.name}/>
       )}  
     </div>
   )
